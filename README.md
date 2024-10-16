@@ -1,4 +1,4 @@
-# X. kurzusalkalom
+# 4. kurzusalkalom
 
 ## Kurzus repository felépítése
 
