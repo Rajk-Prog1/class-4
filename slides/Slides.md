@@ -2,12 +2,70 @@
 title: Output/Input, Fib
 marp: true
 math: mathjax
-class: lead
-paginate: false
-footer: Prog1 - Prelogika
+paginate: true
+footer: Prog1 – Output/Input, Fibonacci-számok
 size: 16:9
 theme: uncover
 author: Bence Kovács
+style: |
+  section {
+    background: #fafafa;
+    color: #242a33;
+    font-family: "DejaVu Sans", Arial, sans-serif;
+    font-size: 30px;
+    line-height: 1.38;
+    letter-spacing: 0;
+    padding: 48px 64px 82px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+  }
+  h1, h2, h3 { color: #244c68; letter-spacing: 0; }
+  h1 { font-size: 58px; line-height: 1.15; }
+  h2 { font-size: 42px; line-height: 1.2; margin: 0 0 28px; }
+  h3 { font-size: 32px; margin: 12px 0; }
+  p { margin: 0 0 18px; }
+  ul, ol { margin: 0 0 18px; padding-left: 1.25em; }
+  li { margin: 8px 0; }
+  strong { color: #244c68; }
+  table { width: 100%; font-size: 27px; border-collapse: collapse; margin: 10px 0 20px; }
+  th, td { padding: 14px 16px; text-align: left; border-bottom: 1px solid #bac5cd; }
+  th { background: #eaf0f4; color: #244c68; }
+  section.title { justify-content: center; text-align: center; }
+  section.title h1 { margin-bottom: 28px; }
+  section.title h2 { font-size: 52px; }
+  section.definition { justify-content: center; text-align: center; }
+  section.definition h2 { font-size: 52px; margin-bottom: 40px; }
+  section.definition p { font-size: 40px; line-height: 1.45; max-width: 1000px; margin: 0 auto; }
+  section.compact { font-size: 28px; }
+  section.compact table { font-size: 26px; }
+  section.compact th, section.compact td { padding: 9px 14px; }
+  section footer {
+    position: absolute; left: 64px; bottom: 25px;
+    width: auto; padding: 0; margin: 0;
+    font-size: 17px; color: #66737f; text-align: left;
+  }
+  section::after {
+    content: attr(data-marpit-pagination) " / " attr(data-marpit-pagination-total);
+    position: absolute; right: 64px; bottom: 25px;
+    padding: 0; font-size: 17px; color: #66737f;
+    background: none; text-shadow: none;
+  }
+  pre { font-size: 27px; line-height: 1.35; padding: 20px 24px; margin: 10px 0 22px; background: #edf1f4; border-radius: 0; box-shadow: none; text-align: left; }
+  code { font-family: "DejaVu Sans Mono", monospace; letter-spacing: 0; }
+  section.reveal table { font-size: 25px; }
+  section.reveal th, section.reveal td { padding: 11px 12px; }
+  section.reveal td:first-child { white-space: nowrap; }
+  section footer { font-size: 16px; }
+  section.expression tbody tr:nth-child(3) { background: #e0ebf2; }
+  section.reveal table { font-size: 24px; }
+  section.reveal th, section.reveal td { padding: 8px 10px; }
+
+  section h3:first-child, section h4:first-child { font-size: 42px; line-height: 1.2; margin: 0 0 28px; color: #244c68; }
+  section[data-marpit-pagination="1"], section[data-marpit-pagination="4"] { justify-content: center; text-align: center; }
+  section[data-marpit-pagination="5"], section[data-marpit-pagination="7"] { font-size: 28px; }
+  section[data-marpit-pagination="9"] pre, section[data-marpit-pagination="10"] pre { font-size: 21px; line-height: 1.2; padding: 16px 24px; }
 ---
 
 # Output/Input, Fibonacci-számok
@@ -231,5 +289,3 @@ Versenyzőink:
 - **Biztonsági problémák**: Ha nem megfelelően használják, a PHP kódok könnyen támadhatók.
 - **Sebesség**: Dinamikusan értelmezett, ami miatt lassabb lehet, mint a compiler nyelvek.
 - **Nagyobb projektek nehézkes kezelése**: Nagyobb projektek esetén a PHP kódok nehezen karbantarthatóvá válhatnak.
-
----
